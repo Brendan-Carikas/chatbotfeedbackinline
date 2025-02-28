@@ -6,7 +6,12 @@ export default defineConfig({
   base: '/chatbotprototypes/',
   build: {
     outDir: 'docs',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: 'assets/[name].[ext]'
+      }
+    }
   },
   plugins: [react()],
   optimizeDeps: {

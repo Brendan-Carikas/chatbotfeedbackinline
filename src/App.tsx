@@ -25,20 +25,11 @@ function App() {
         <Route path="/original" element={<OriginalApp />} />
         <Route path="/capture" element={<CaptureDetails />} />
         <Route path="/capture-v2" element={<CaptureDetailsV2 />} />
+        <Route path="/chat-feedback" element={<ChatFeedDrawer />} />
         <Route path="/" element={<Navigate to="/welcome" replace />} />
-        // In your router configuration:
-<Route path="/chat-feedback" element={<ChatFeedDrawer />} />
       </Routes>
     </HashRouter>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
